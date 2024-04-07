@@ -1,0 +1,29 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.welcome h3 {
+  margin: 20px 60px; /* Add space between elements */
+}
+
+.addworkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.addworkout button {
+  margin-bottom: 30px;
+  height: 40px; /* Add space between button and image */
+  width: 180px;
+}
+
+.addworkout img {
+  width: 300px; /* Add space between button and image */
+}
