@@ -17,8 +17,14 @@ const setAuthorisationHeaders = () => {
 
 setAuthorisationHeaders();
 
-//! GET ALL WORKOUTS FROM THE USER:
+//? GET ALL WORKOUTS FROM THE USER:
 
 export const getAllWorkouts = userId => {
   return axios.get(`${baseURL}/workout/${userId}`);
+};
+
+//? CREATE A NEW WORKOUT FOR THIS USER:
+
+export const newWorkout = userId => {
+  return axios.post(`${baseURL}/newworkout/${userId}`);
 };
