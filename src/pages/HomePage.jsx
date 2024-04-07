@@ -1,4 +1,5 @@
 import '../components/CSS/HomePage.css';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   return (
@@ -8,7 +9,9 @@ function HomePage() {
 
         <div>
           <div className='addworkout'>
-            <button> Add a Workout +</button>
+            <Link to='/newworkout'>
+              <button>Add a Workout +</button>
+            </Link>
             <img src='/src/assets/arnold.gif' alt='arnold' />
           </div>
         </div>

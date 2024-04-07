@@ -3,11 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 60vh;
 }
 
 .welcome h3 {
-  margin: 20px 60px; /* Add space between elements */
+  margin: 20px 60px;
+  text-align: center; /* Add space between elements */
 }
 
 .addworkout {
