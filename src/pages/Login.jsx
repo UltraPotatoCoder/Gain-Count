@@ -29,12 +29,6 @@ function Login() {
         <h1 className='text-2xl font-bold sm:text-3xl'>
           Ready to get started?
         </h1>
-
-        <p className='mt-4 text-gray-500'>
-          Ready to take your driving experience to the next level? Log in now
-          and start reaping the rewards of being part of exclusive drivers
-          appointments!
-        </p>
       </div>
 
       <form

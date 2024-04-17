@@ -19,8 +19,18 @@ function Signup() {
       await signup(user);
       navigate('/login');
     } catch (error) {
-      console.log('Error signup', error);
-      setError(error.response.data.message);
+      if (
+        error.response &&
+        error.response.data &&
+        error.response.data.message
+      ) {
+        // If the error contains response data with a message, set the error state
+        setError(error.response.data.message);
+      } else {
+        // If the error is not related to the server response, log it
+        console.log('Error signup', error);
+        setError('An error occurred. Please try again later.');
+      }
     }
   };
 
@@ -28,12 +38,6 @@ function Signup() {
     <div className='mx-auto max-w-screen-md mt-10 px-4 py-14 border-2 sm:px-6 lg:px-8'>
       <div className='mx-auto max-w-lg text-center'>
         <h1 className='text-2xl font-bold sm:text-3xl'>Get started today!</h1>
-
-        <p className='mt-4 text-gray-500'>
-          Ready to take your driving experience to the next level? Sign up now
-          and start reaping the rewards of being part of
-          <span className='text-black font-bold'> Route Mate!</span>
-        </p>
       </div>
 
       <form
