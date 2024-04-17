@@ -11,8 +11,6 @@ function NewWorkout() {
   const [duration, setDuration] = useState('');
   const [notes, setNotes] = useState('');
 
-  const user = '660c40f90b302623439c34bd';
-
   const handleSubmit = async e => {
     e.preventDefault();
     console.log(user);
